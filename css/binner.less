@@ -1,0 +1,346 @@
+@binnerH: 380px;
+@binnerUrl: "../img/binner/";
+html,
+body {
+  background: #f6f6f6;
+  color: -internal-root-color;
+}
+em,
+i {
+  font-style: normal;
+}
+.header {
+  width: 100%;
+  height: 155px;
+  border: 1px solid black;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+// binner部分
+.binner {
+  width: 1200px;
+  height: @binnerH;
+  // border: 1px solid black;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  .binner_left {
+    width: 210px;
+    height: @binnerH;
+    box-sizing: border-box;
+    display: inline-block;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    dl {
+      width: 190px;
+      height: 377px;
+      overflow: hidden;
+      padding: 2px 10px 1px;
+      box-sizing: border-box;
+      background-color: #fff;
+      dd {
+        float: left;
+        width: 50%;
+        height: 54px;
+        line-height: 53px;
+        text-align: center;
+        // css第9天
+        // border-bottom: 1px dashed #eee;
+        background: url(../img/binner/dotted_line.png) repeat-x bottom;
+        overflow: hidden;
+        a {
+          color: #5e5e5e;
+          height: 50px;
+          display: block;
+          font-size: 14px;
+          line-height: 50px;
+          text-align: center;
+          .iconfont {
+            font-size: 20px;
+            width: 24px;
+            display: inline-block;
+            margin-right: 5px;
+            color: #cdcdcd;
+          }
+          .ct-line {
+            float: right;
+            width: 1px;
+            height: 15px;
+            background-color: #eee;
+            margin-top: 18px;
+          }
+          i:hover {
+            color: #ff464e;
+          }
+        }
+        a:hover {
+          color: #ff464e;
+        }
+      }
+      // dd:hover{
+      //   color: red;
+      // }
+      .border-none {
+        background: none;
+      }
+    }
+  }
+  .binner_content {
+    width: 700px;
+    height: 360px;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    left: 230px;
+    top: 20px;
+    cursor: pointer;
+    .wrapper {
+      width: 700px;
+      height: 360px;
+
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+      }
+      img:nth-child(1) {
+        display: block;
+      }
+    }
+    .round {
+      width: 150px;
+      height: 30px;
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      a {
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        background: #fff;
+        margin-right: 7px;
+        cursor: pointer;
+        vertical-align: middle;
+        display: inline-block;
+      }
+      .current {
+        background: transparent;
+        border: 3px solid #fff;
+      }
+    }
+    // .banner_arrow {
+
+    .arrow {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      display: inline-block;
+      width: 29px;
+      height: 45px;
+      background: rgba(0, 0, 0, 0.2);
+      line-height: 40px;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      margin-top: -20px;
+      display: none;
+    }
+    #left {
+      left: 0;
+    }
+    #right {
+      right: 0;
+      i {
+        background-position: -15px;
+      }
+    }
+    i {
+      background: url("@{binnerUrl}arrow.png") no-repeat;
+      cursor: pointer;
+      width: 13px;
+      height: 21px;
+      display: block;
+      margin: 12px 0 0 9px;
+    }
+    .arrow:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    // }
+  }
+  .binner_right {
+    width: 250px;
+    height: 360px;
+    box-sizing: border-box;
+    float: right;
+    background: #fff;
+    margin-top: 20px;
+    box-shadow: none;
+    overflow: hidden;
+    dl {
+      width: 251px;
+      height: 360px;
+      background-color: #e2e2e2;
+      overflow: hidden;
+      dd {
+        float: left;
+        margin: 0 1px 1px 0;
+        width: 124.5px;
+        height: 119px;
+        overflow: hidden;
+        background: #fff;
+        text-align: center;
+        display: inline;
+        cursor: pointer;
+
+        img:hover {
+          opacity: 0.8;
+        }
+      }
+      .last {
+        width: 250px;
+        height: 120px;
+      }
+    }
+  }
+}
+
+//今日品牌
+.brand {
+  width: 1200px;
+  height: 308px;
+  margin: 20px auto 0;
+  border: 1px solid #000;
+}
+
+//今日新品
+.newProduct {
+  width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 1px solid #000;
+}
+//底部
+.foot {
+  // width: 100%;
+  height: 355px;
+  border: 1px solid #000;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.side_right {
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 36px;
+  z-index: 102;
+  background-color: #444;
+  .side_box {
+    color: #fff;
+    height: 100%;
+    position: relative;
+    background: #444;
+    .side-oper li {
+      a {
+        color: #5e5e5e;
+        i.normal-icon {
+          display: block;
+          background: url(../img/side_right/sidebar.png) no-repeat;
+        }
+        i.normal-icon.i-user {
+          background-position: 0 0;
+          width: 18px;
+          height: 18px;
+          margin-left: 9px;
+        }
+        i.normal-icon.i-cart {
+          height: 77px;
+          width: 18px;
+          background-position: 1px -24px;
+          margin: 0 0 0 9px;
+        }
+        i.normal-icon.i-love {
+          width: 18px;
+          height: 18px;
+          background-position: 0 -110px;
+          margin: 0 0 0 9px;
+        }
+        i.normal-icon.i-quan {
+          width: 18px;
+          height: 18px;
+          background-position: 0 -134px;
+          margin: 0 0 0 9px;
+        }
+        i.normal-icon.i-complain {
+          width: 18px;
+          height: 18px;
+          background-position: 0 -208px;
+          margin: 0 0 0 9px;
+        }
+        i.normal-icon.i-code {
+          width: 18px;
+          height: 18px;
+          background-position: 0 -160px;
+          margin: 0 0 0 9px;
+        }
+        i.normal-icon.i-backtop {
+          width: 18px;
+          height: 18px;
+          background-position: 0 -187px;
+          margin: 0 0 0 9px;
+        }
+        em.num {
+          background: #ff464e;
+          border-radius: 15px;
+          color: #fff;
+          display: block;
+          font-family: "宋体";
+          height: 18px;
+          line-height: 18px;
+          width: 18px;
+          text-align: center;
+          margin: 5px 0 0 9px;
+        }
+      }
+      a.links {
+        width: 36px;
+        padding: 9px 0;
+        display: block;
+        cursor: pointer;
+      }
+      a.cart {
+        border-top: #555 solid 1px;
+        border-bottom: #555 solid 1px;
+      }
+      a:hover{
+        color: #ff464e;
+      }
+    }
+    li.normal {
+      margin-top: 15px;
+      position: relative;
+    }
+    li.side-cart {
+      border-top: #222 solid 1px;
+      border-bottom: #222 solid 1px;
+    }
+    li.normal:hover a.links{
+      background: #ff464e;
+    }
+  }
+  .side-oper.other {
+    position: absolute;
+    bottom: 20px;
+    top: auto;
+  }
+}
