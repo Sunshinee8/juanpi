@@ -6,9 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/binner.css" />
-    <link rel="stylesheet" href="./font-icon/iconfont.css" />
-    <link rel="stylesheet" href="./font-icon/iconfontMan.css" />
-    <!-- <link rel="stylesheet" href="./font-icon/iconfont_user.css"> -->
+    <link rel="stylesheet" href="./font-icon/iconfont-binner_l.css">
   </head>
   <body>
     <!-- 头部 -->
@@ -18,99 +16,15 @@
     <div class="binner">
       <!-- 左边 -->
       <div class="binner_left">
-        <dl>
-          <dd>
-            <a href="javascript:;">
-              <i class="iconfont icon-nvzhuang"></i> 女装
-              <em class="ct-line"></em>
-            </a>
-          </dd>
-          <dd>
-            <a href="javascript:;">
-              <i class="iconfont icon-nanzhuang01"></i> 男装
-            </a>
-          </dd>
-          <dd>
-            <a href="javascript:;">
-              <i class="iconfont icon-nvzhuang"></i> 鞋子
-              <em class="ct-line"></em>
-            </a>
-          </dd>
-          <dd>
-            <a href="javascript:;">
-              <i class="iconfont icon-nvzhuang"></i> 箱包
-            </a>
-          </dd>
-          <dd>
-            <a href="javascript:;">
-              <i class="iconfont icon-nvzhuang"></i> 母婴
-              <em class="ct-line"></em>
-            </a>
-          </dd>
-          <dd>
-            <a href="javascript:;">
-              <i class="iconfont icon-nvzhuang"></i> 美妆
-            </a>
-          </dd>
-          <dd>
-            <a href="javascript:;">
-              <i class="iconfont icon-nvzhuang"></i> 居家
-              <em class="ct-line"></em>
-            </a>
-          </dd>
-          <dd>
-            <a href="javascript:;">
-              <i class="iconfont icon-nvzhuang"></i> 家纺
-            </a>
-          </dd>
-          <dd>
-            <a href="javascript:;">
-              <i class="iconfont icon-nvzhuang"></i> 文体
-              <em class="ct-line"></em>
-            </a>
-          </dd>
-          <dd>
-            <a href="javascript:;">
-              <i class="iconfont icon-nvzhuang"></i> 美食
-            </a>
-          </dd>
-          <dd>
-            <a href="javascript:;">
-              <i class="iconfont icon-nvzhuang"></i> 数码
-              <em class="ct-line"></em>
-            </a>
-          </dd>
-          <dd>
-            <a href="javascript:;">
-              <i class="iconfont icon-nvzhuang"></i> 电器
-            </a>
-          </dd>
-          <dd class="border-none">
-            <a href="javascript:;">
-              <i class="iconfont icon-nvzhuang"></i> 内衣
-              <em class="ct-line"></em>
-            </a>
-          </dd>
-          <dd class="border-none">
-            <a href="javascript:;">
-              <i class="iconfont icon-nvzhuang"></i> 配饰
-            </a>
-          </dd>
+        <dl id='dl_left'>
         </dl>
       </div>
       <!-- 中间 -->
       <div class="binner_content">
         <div class="wrapper" id="wrapper">
-          <!-- <img src="./img/binner1.jpg" alt="" />
-          <img src="./img/binner2.jpg" alt="" />
-          <img src="./img/binner3.jpg" alt="" /> -->
         </div>
         <div class="round" id="round">
-          <!-- <a class="current"></a>
-          <a></a>
-          <a></a> -->
         </div>
-        <!-- <div class="banner_arrow"> -->
         <a href="javascript:;" class="arrow" id="left">
           <i></i>
         </a>
@@ -191,8 +105,8 @@
               <i class="normal-icon i-code"></i>
             </a>
           </li>
-          <li class="normal side-backtop">
-            <a class="links" href="javascript:;">
+          <li id='side_other' class="normal side-backtop">
+            <a id="top_a" class="links" href="javascript:;">
               <i class="normal-icon i-backtop"></i>
             </a>
           </li>
@@ -203,3 +117,4 @@
 </html>
 <script src="./js/jquery-1.11.3.js"></script>
 <script src="./js/binner.js"></script>
+<script src="./js/side_right.js"></script>

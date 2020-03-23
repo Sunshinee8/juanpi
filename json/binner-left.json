@@ -1,0 +1,16 @@
+[
+  { "key": "nvzhuang", "value": "女装" },
+  { "key": "nanzhuang01", "value": "男装" },
+  { "key": "xiezi", "value": "鞋子" },
+  { "key": "xiangbao", "value": "箱包" },
+  { "key": "muying", "value": "母婴" },
+  { "key": "meizhuang", "value": "美妆" },
+  { "key": "jujia", "value": "居家" },
+  { "key": "jiajujiafang", "value": "家纺" },
+  { "key": "bi", "value": "文体" },
+  { "key": "meishi", "value": "美食" },
+  { "key": "icon_shuma", "value": "数码" },
+  { "key": "dianqi1", "value": "电器" },
+  { "key": "neiyi", "value": "内衣" },
+  { "key": "peishi2", "value": "配饰" }
+]

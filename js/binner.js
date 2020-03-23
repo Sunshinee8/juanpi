@@ -24,19 +24,27 @@
     $("#wrapper").html(imgs);
     $("#round").html(as);
   }
-/**
- *------------------------------------- 轮播图滚动--------------------------
- */
+  /**
+   *------------------------------------- 轮播图滚动--------------------------
+   */
   //滚动
   function autoMove() {
     step++;
     step === 3 ? (step = 0) : step;
-    $("#wrapper img").eq(step).fadeIn().siblings().fadeOut();
+    $("#wrapper img")
+      .eq(step)
+      .fadeIn()
+      .siblings()
+      .fadeOut();
     changeTip();
   }
   //焦点跟随
   function changeTip() {
-    $("#round a").eq(step).addClass("current").siblings().removeClass("current");
+    $("#round a")
+      .eq(step)
+      .addClass("current")
+      .siblings()
+      .removeClass("current");
   }
   send();
   changeTip();
@@ -70,4 +78,31 @@
     step < -1 ? (step = 1) : null;
     autoMove();
   });
+
+  function send2() {
+    $.ajax({
+      url: "./json/binner-left.json",
+      type: "get",
+      async: true,
+      success: function(data) {
+        // console.log(data);
+        binnerHtml2(data);
+      }
+    });
+  }
+  function binnerHtml2(data) {
+    let str = ``;
+    $.each(data,function(index, item) {
+      str += `<dd><a href="javascript:;">
+              <i class="iconfont icon-${item.key}"></i> 
+              ${item.value}`;
+      if (index % 2 === 0) {
+        str += `<em class="ct-line"></em> `;
+      }
+      str += `</a></dd>`;
+    });
+    // console.log(str);
+    $('#dl_left').html(str);
+  }
+  send2();
 })();

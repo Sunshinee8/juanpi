@@ -315,8 +315,11 @@ i {
 .side_right .side_box li.normal:hover a.links {
   background: #ff464e;
 }
+.side_right .side_box li.side-backtop {
+  opacity: 0;
+}
 .side_right .side-oper.other {
   position: absolute;
-  bottom: 20px;
+  bottom: 15px;
   top: auto;
 }

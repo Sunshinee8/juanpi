@@ -80,9 +80,6 @@ i {
           color: #ff464e;
         }
       }
-      // dd:hover{
-      //   color: red;
-      // }
       .border-none {
         background: none;
       }
@@ -237,6 +234,8 @@ i {
   margin: 0 auto;
   margin-top: 40px;
 }
+
+// 侧边栏
 .side_right {
   height: 100%;
   position: fixed;
@@ -250,97 +249,106 @@ i {
     height: 100%;
     position: relative;
     background: #444;
-    .side-oper li {
-      a {
-        color: #5e5e5e;
-        i.normal-icon {
+    // .side-oper {
+    //   // position: absolute;
+    //   // bottom: 15px;
+    //   // top: auto;
+
+      .side-oper li {
+        a {
+          color: #5e5e5e;
+          i.normal-icon {
+            display: block;
+            background: url(../img/side_right/sidebar.png) no-repeat;
+          }
+          i.normal-icon.i-user {
+            background-position: 0 0;
+            width: 18px;
+            height: 18px;
+            margin-left: 9px;
+          }
+          i.normal-icon.i-cart {
+            height: 77px;
+            width: 18px;
+            background-position: 1px -24px;
+            margin: 0 0 0 9px;
+          }
+          i.normal-icon.i-love {
+            width: 18px;
+            height: 18px;
+            background-position: 0 -110px;
+            margin: 0 0 0 9px;
+          }
+          i.normal-icon.i-quan {
+            width: 18px;
+            height: 18px;
+            background-position: 0 -134px;
+            margin: 0 0 0 9px;
+          }
+          i.normal-icon.i-complain {
+            width: 18px;
+            height: 18px;
+            background-position: 0 -208px;
+            margin: 0 0 0 9px;
+          }
+          i.normal-icon.i-code {
+            width: 18px;
+            height: 18px;
+            background-position: 0 -160px;
+            margin: 0 0 0 9px;
+          }
+          i.normal-icon.i-backtop {
+            width: 18px;
+            height: 18px;
+            background-position: 0 -187px;
+            margin: 0 0 0 9px;
+          }
+          em.num {
+            background: #ff464e;
+            border-radius: 15px;
+            color: #fff;
+            display: block;
+            font-family: "宋体";
+            height: 18px;
+            line-height: 18px;
+            width: 18px;
+            text-align: center;
+            margin: 5px 0 0 9px;
+          }
+        }
+        a.links {
+          width: 36px;
+          padding: 9px 0;
           display: block;
-          background: url(../img/side_right/sidebar.png) no-repeat;
+          cursor: pointer;
         }
-        i.normal-icon.i-user {
-          background-position: 0 0;
-          width: 18px;
-          height: 18px;
-          margin-left: 9px;
+        a.cart {
+          border-top: #555 solid 1px;
+          border-bottom: #555 solid 1px;
         }
-        i.normal-icon.i-cart {
-          height: 77px;
-          width: 18px;
-          background-position: 1px -24px;
-          margin: 0 0 0 9px;
-        }
-        i.normal-icon.i-love {
-          width: 18px;
-          height: 18px;
-          background-position: 0 -110px;
-          margin: 0 0 0 9px;
-        }
-        i.normal-icon.i-quan {
-          width: 18px;
-          height: 18px;
-          background-position: 0 -134px;
-          margin: 0 0 0 9px;
-        }
-        i.normal-icon.i-complain {
-          width: 18px;
-          height: 18px;
-          background-position: 0 -208px;
-          margin: 0 0 0 9px;
-        }
-        i.normal-icon.i-code {
-          width: 18px;
-          height: 18px;
-          background-position: 0 -160px;
-          margin: 0 0 0 9px;
-        }
-        i.normal-icon.i-backtop {
-          width: 18px;
-          height: 18px;
-          background-position: 0 -187px;
-          margin: 0 0 0 9px;
-        }
-        em.num {
-          background: #ff464e;
-          border-radius: 15px;
-          color: #fff;
-          display: block;
-          font-family: "宋体";
-          height: 18px;
-          line-height: 18px;
-          width: 18px;
-          text-align: center;
-          margin: 5px 0 0 9px;
+        a:hover {
+          color: #ff464e;
         }
       }
-      a.links {
-        width: 36px;
-        padding: 9px 0;
-        display: block;
-        cursor: pointer;
+      li.normal {
+        margin-top: 15px;
+        position: relative;
       }
-      a.cart {
-        border-top: #555 solid 1px;
-        border-bottom: #555 solid 1px;
+      li.side-cart {
+        border-top: #222 solid 1px;
+        border-bottom: #222 solid 1px;
       }
-      a:hover{
-        color: #ff464e;
+      li.normal:hover a.links {
+        background: #ff464e;
       }
-    }
-    li.normal {
-      margin-top: 15px;
-      position: relative;
-    }
-    li.side-cart {
-      border-top: #222 solid 1px;
-      border-bottom: #222 solid 1px;
-    }
-    li.normal:hover a.links{
-      background: #ff464e;
-    }
+      li.side-backtop {
+        opacity: 0;
+      }
+    
   }
   .side-oper.other {
     position: absolute;
-    bottom: 20px;
+    bottom: 15px;
     top: auto;
   }
 }
